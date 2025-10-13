@@ -1,26 +1,35 @@
 @import "tailwindcss";
 
-:root {
-  --background: #ffffff;
-  --foreground: #171717;
+@font-face {
+    font-family: dt;
+    src: url(../../public/font/DTGetaiGroteskDisplay-Black.ttf);
 }
 
-@theme inline {
-  --color-background: var(--background);
-  --color-foreground: var(--foreground);
-  --font-sans: var(--font-geist-sans);
-  --font-mono: var(--font-geist-mono);
+@font-face {
+    font-family: hermione;
+    src: url(../../public/font/Hermionefree.ttf);
 }
 
-@media (prefers-color-scheme: dark) {
-  :root {
-    --background: #0a0a0a;
-    --foreground: #ededed;
-  }
+@font-face {
+    font-family: ligema;
+    src: url(../../public/font/Ligema\ DEMO.otf);
 }
 
-body {
-  background: var(--background);
-  color: var(--foreground);
-  font-family: Arial, Helvetica, sans-serif;
+@font-face {
+    font-family: blockat;
+    src: url(../../public/font/Blockat\ DEMO.otf);
+}
+
+@font-face {
+    font-family: corpta;
+    src: url(../../public/font/Corpta\ DEMO.otf
+    );
+}
+
+:root{
+    --bg: #e5e7eb;
+    --numbertext: #A6A6A6;
+    --eyesbg: #819A91;
+    --eyestext: #EEEFE0;
+    --elemColor: rgb(211, 253, 80);
 }
