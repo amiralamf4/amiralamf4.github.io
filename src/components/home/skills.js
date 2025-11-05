@@ -50,12 +50,23 @@ const skills = () => {
             This is my digital toolbox — a space where ideas transform into meaningful, engaging, and impactful creations that resonate with users and inspire growth.</p>
         </div>
         <div className='mt-5 md:mt-10 grid grid-cols-2 w-full h-full text-xl sm:text-2xl lg:text-4xl gap-y-22 md:gap-y-10 lg:gap-y-20 gap-x-10 px-5 md:px-20 font-[hermione] font-semibold'>
+          
+          {/* JAVASCRIPT */}
+          <div onMouseEnter={()=>{taildwinRef.current.style.height='100%'}}
+          onMouseLeave={()=>{taildwinRef.current.style.height='0'}}
+          className='w-full h-full border-b-2 border-gray-500 relative'>
+            <div className='w-full h-full flex'>
+          <h2 className='py-2 md:py-3 lg:py-6  z-10'><span className='text-[color:var(--numbertext)] font-semibold text-2xl lg:text-5xl pl-5'>01</span>&nbsp;&nbsp;JavaScript</h2>
+            </div>
+          <div ref={taildwinRef} className='w-full h-0 bg-[color:var(--elemColor)] absolute bottom-0 left-0 transition-all rounded-t-2xl'></div>
+          </div>
+          
           {/* Mern */}
           <div onMouseEnter={()=>{mernRef.current.style.height='100%'}}
           onMouseLeave={()=>{mernRef.current.style.height='0'}}
           className='w-full h-full border-b-2 border-gray-500 relative'>
             <div className='w-full h-full flex'>
-          <h2 className='py-2 md:py-3 lg:py-6  z-10'><span className='text-[color:var(--numbertext)] font-semibold text-2xl lg:text-5xl pl-5'>01</span>&nbsp;&nbsp;Mearn Stack</h2>
+          <h2 className='py-2 md:py-3 lg:py-6  z-10'><span className='text-[color:var(--numbertext)] font-semibold text-2xl lg:text-5xl pl-5'>02</span>&nbsp;&nbsp;Mearn Stack</h2>
             </div>
           <div ref={mernRef} className='w-full h-0 bg-[color:var(--elemColor)] absolute bottom-0 left-0 transition-all rounded-t-2xl'></div>
           </div>
@@ -65,19 +76,9 @@ const skills = () => {
           onMouseLeave={()=>{nextRef.current.style.height='0'}}
           className='w-full h-full border-b-2 border-gray-500 relative'>
             <div className='w-full h-full flex'>
-          <h2 className='py-2 md:py-3 lg:py-6  z-10'><span className='text-[color:var(--numbertext)] font-semibold text-2xl lg:text-5xl pl-5'>01</span>&nbsp;&nbsp;Next Js</h2>
+          <h2 className='py-2 md:py-3 lg:py-6  z-10'><span className='text-[color:var(--numbertext)] font-semibold text-2xl lg:text-5xl pl-5'>03</span>&nbsp;&nbsp;Next Js</h2>
             </div>
           <div ref={nextRef} className='w-full h-0 bg-[color:var(--elemColor)] absolute bottom-0 left-0 transition-all rounded-t-2xl'></div>
-          </div>
-
-          {/* TaildwindCss */}
-          <div onMouseEnter={()=>{taildwinRef.current.style.height='100%'}}
-          onMouseLeave={()=>{taildwinRef.current.style.height='0'}}
-          className='w-full h-full border-b-2 border-gray-500 relative'>
-            <div className='w-full h-full flex'>
-          <h2 className='py-2 md:py-3 lg:py-6  z-10'><span className='text-[color:var(--numbertext)] font-semibold text-2xl lg:text-5xl pl-5'>01</span>&nbsp;&nbsp;TaildwindCss</h2>
-            </div>
-          <div ref={taildwinRef} className='w-full h-0 bg-[color:var(--elemColor)] absolute bottom-0 left-0 transition-all rounded-t-2xl'></div>
           </div>
 
           {/* SaasCss */}
@@ -86,7 +87,7 @@ const skills = () => {
           onMouseLeave={()=>{SaasCss.current.style.height='0'}}
           className='w-full h-full border-b-2 border-gray-500 relative'>
             <div className='w-full h-full flex'>
-          <h2 className='py-2 md:py-3 lg:py-6  z-10'><span className='text-[color:var(--numbertext)] font-semibold text-2xl lg:text-5xl pl-5'>01</span>&nbsp;&nbsp;SaasCss</h2>
+          <h2 className='py-2 md:py-3 lg:py-6  z-10'><span className='text-[color:var(--numbertext)] font-semibold text-2xl lg:text-5xl pl-5'>04</span>&nbsp;&nbsp;SaasCss</h2>
             </div>
           <div ref={SaasCss} className='w-full h-0 bg-[color:var(--elemColor)] absolute bottom-0 left-0 transition-all rounded-t-2xl'></div>
           </div>
@@ -96,7 +97,7 @@ const skills = () => {
           onMouseLeave={()=>{GsapRef.current.style.height='0'}}
           className='w-full h-full border-b-2 border-gray-500 relative'>
             <div className='w-full h-full flex'>
-          <h2 className='py-2 md:py-3 lg:py-6  z-10'><span className='text-[color:var(--numbertext)] font-semibold text-2xl lg:text-5xl pl-5'>01</span>&nbsp;&nbsp;Gsap</h2>
+          <h2 className='py-2 md:py-3 lg:py-6  z-10'><span className='text-[color:var(--numbertext)] font-semibold text-2xl lg:text-5xl pl-5'>05</span>&nbsp;&nbsp;Gsap</h2>
             </div>
           <div ref={GsapRef} className='w-full h-0 bg-[color:var(--elemColor)] absolute bottom-0 left-0 transition-all rounded-t-2xl'></div>
           </div>
@@ -106,7 +107,7 @@ const skills = () => {
           onMouseLeave={()=>{MotionRef.current.style.height='0'}}
           className='w-full h-full border-b-2 border-gray-500 relative'>
             <div className='w-full h-full flex'>
-          <h2 className='py-2 md:py-3 lg:py-6  z-10'><span className='text-[color:var(--numbertext)] font-semibold text-2xl lg:text-5xl pl-5'>01</span>&nbsp;&nbsp;Motion</h2>
+          <h2 className='py-2 md:py-3 lg:py-6  z-10'><span className='text-[color:var(--numbertext)] font-semibold text-2xl lg:text-5xl pl-5'>06</span>&nbsp;&nbsp;Motion</h2>
             </div>
           <div ref={MotionRef} className='w-full h-0 bg-[color:var(--elemColor)] absolute bottom-0 left-0 transition-all rounded-t-2xl'></div>
           </div>
