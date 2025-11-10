@@ -1,10 +1,10 @@
 import "./globals.css";
+import LoadAnimation from "@/components/loadingAnimation/loadAnimation"; 
 import Navbaar from "@/components/navbar/Navbaar";
 import SmoothScroll from "@/components/locomotive/SmoothScroll";
-
 export const metadata = {
-  title: "My Website",
-  description: "Scroll Smoothly with Locomotive",
+  title: "Amir Alam",
+  description: "Scroll Smoothly with me",
 };
 
 export default function RootLayout({ children }) {
@@ -12,6 +12,7 @@ export default function RootLayout({ children }) {
     <html lang="en">
       <body>
         <SmoothScroll>
+          <LoadAnimation/>
           <Navbaar />
           {children}
         </SmoothScroll>

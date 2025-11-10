@@ -6,9 +6,11 @@ import Eyes from '@/components/home/eyes'
 import Pictures from '@/components/home/pictures'
 import Socialmedia from '@/components/home/socialmedia'
 
+
 const page = () => { 
   return (
     <div className='w-full pt-0.5 bg-[color:var(--bg)] '> 
+    
       <Herosection/>
       <Projectshow/>
       <Skills/>
