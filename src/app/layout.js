@@ -1,6 +1,6 @@
 import "./globals.css";
 import LoadAnimation from "@/components/loadingAnimation/loadAnimation"; 
-import Navbaar from "@/components/navbar/Navbaar";
+// import Navbaar from "@/components/navbar/Navbaar";
 import SmoothScroll from "@/components/locomotive/SmoothScroll";
 export const metadata = {
   title: "Amir Alam",
@@ -13,7 +13,7 @@ export default function RootLayout({ children }) {
       <body>
         <SmoothScroll>
           <LoadAnimation/>
-          <Navbaar />
+          {/* <Navbaar /> */}
           {children}
         </SmoothScroll>
       </body>
