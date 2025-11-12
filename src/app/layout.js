@@ -5,6 +5,9 @@ import SmoothScroll from "@/components/locomotive/SmoothScroll";
 export const metadata = {
   title: "Amir Alam",
   description: "Scroll Smoothly with me",
+  icons: {
+    icon: "/icon.ico", // path inside public folder
+  },
 };
 
 export default function RootLayout({ children }) {

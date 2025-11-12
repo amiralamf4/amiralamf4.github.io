@@ -10,16 +10,28 @@ const projects = () => {
 
   const projectList = [
     {
+      name1:"Ochi Clone Website",
       img1: "./project/03.png",
-      img2: "./project/02.png"
+      link1:"https://ochi-design-page.vercel.app/",
+      name2:"GitHub Finder",
+      img2: "./project/02.png",
+      link2:"https://github-api-phi-self.vercel.app/"
     },
     {
+      name1:"Guess the number",
       img1: "./project/01.png",
-      img2: "./project/bmi.png"
+      link1: "https://gussing-game.netlify.app/",
+      name12:"BMI Calculator",
+      img2: "./project/bmi.png",
+      link2:"https://bmi-checks.netlify.app/",
     },
     {
+      name1:"Four Cards Feature",
       img1: "./project/fourCards.png",
-      img2: "./project/ratingCard.png"
+      link1:"https://amiralam.is-a.dev/four-card-feature/",
+      name2:"Rating Card",
+      img2: "./project/ratingCard.png",
+      link2:"https://cardrating.netlify.app/",
     }
   ]
   gsap.registerPlugin(ScrollTrigger);
@@ -47,14 +59,16 @@ const projects = () => {
   return (
     <div className='w-full bg-[color:var(--bg)] relative'>
       <Navbaar />
-      <div className='pt-[45vh] px-5'>
+      {/* Projects */}
+      <div className='pt-[55vh] sm:pt-[65vh] px-5'>
         <h2 className='font-[corpta] text-[8.5vw] uppercase'>Projects</h2>
       </div>
-      <div className='main -mt-10 px-5'>
+      {/* Cards */}
+      <div className='main sm:mt-10 md:-mt-10 px-5'>
         {projectList.map(function (item, idx) {
           return (
-            <div key={idx} className='hero w-full h-[600px] mb-5 flex gap-5'>
-              <ProjectCards img1={item.img1} img2={item.img2} />
+            <div key={idx} className='hero w-full h-[800px] sm:h-[400px] md:h-[600px] mb-5 flex flex-col sm:flex-row gap-5'>
+              <ProjectCards img1={item.img1} link1={item.link1} img2={item.img2} link2={item.link2}/>
             </div>
           )
         })}

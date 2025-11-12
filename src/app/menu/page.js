@@ -46,7 +46,7 @@ const page = () => {
             <div ref={homeDev} className=' absolute top-0 left-0 transition-all w-full h-0 bg-[color:var(--elemColor)] flex justify-center items-center'><h2 ref={homeRef} className='hidden text-black transition-all'>Home</h2></div></Link>
             </div>
 
-            {/* About Link */}
+            {/* Resume Link */}
             <div 
             onMouseEnter={()=>{
               aboutDev.current.style.height = '100%',
@@ -58,8 +58,8 @@ const page = () => {
               aboutRef.current.style.display = 'none'
 
             }}
-            className='w-full h-24 md:h-40 border-white border-y-2 flex justify-center items-center cursor-pointer relative text-[6vw] font-[hermione]'><Link href='/about'><h2 >About</h2>
-            <div ref={aboutDev} className=' absolute top-0 left-0 transition-all w-full h-0 bg-[color:var(--elemColor)] flex justify-center items-center'><h2 ref={aboutRef} className='hidden text-black transition-all'>About</h2></div></Link>
+            className='w-full h-24 md:h-40 border-white border-y-2 flex justify-center items-center cursor-pointer relative text-[6vw] font-[hermione]'><Link href='/resume'><h2>Resume</h2>
+            <div ref={aboutDev} className=' absolute top-0 left-0 transition-all w-full h-0 bg-[color:var(--elemColor)] flex justify-center items-center'><h2 ref={aboutRef} className='hidden text-black transition-all'>Resume</h2></div></Link>
             </div>
          
          {/* Project Link */}
