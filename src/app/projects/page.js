@@ -1,7 +1,7 @@
 "use client"
 import React from 'react'
 import Navbaar from '@/components/navbar/Navbaar';
-import ProjectCards from '@/components/projects/Projects';
+import ProjectCards from '../../components/projects/projects';
 import { useGSAP } from '@gsap/react';
 import gsap from 'gsap';
 import { ScrollTrigger } from 'gsap/all';
