@@ -38,7 +38,9 @@ const Navbaar = () => {
         }}
         className='sayhello relative bg-black w-1/2 h-14 flex items-end pl-5 cursor-pointer'>
           <div className='w-full h-full flex items-center'>
-            <h3 ref={helloTextRef} className='w-full text-white font-[ligema] text-2xl md:text-4xl font-thin tracking-widest z-10 transition-all'><Link href='/gamilhaveto write'>Say Hello</Link></h3>
+            <h3 ref={helloTextRef} className='w-full text-white font-[ligema] text-2xl md:text-4xl font-thin tracking-widest z-10 transition-all'>
+              <a href='mailto:sameer72135@gmail.com?subject=Hello from your Portfolio&body=Hi Amir,'>Say Hello</a>
+            </h3>
           </div>
           <div ref={helloRef} className='w-full h-0 bg-[color:var(--elemColor)] transition-all absolute top-0 left-0'></div>
         </div>
