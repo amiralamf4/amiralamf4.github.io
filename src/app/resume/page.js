@@ -2,7 +2,7 @@
 import React from 'react'
 import Resume from '../../components/resume/ScrollVelocity'
 import Navbaar from '../../components/navbar/Navbaar'
-import ResumeCard from "../../components/resume/resumeCard"
+import ResumeCard from "../../components/resume/ResumeCard"
 
 const page = () => {
   return (

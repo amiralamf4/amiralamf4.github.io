@@ -3,7 +3,7 @@ import Link from 'next/link'
 import React from 'react'
 import Image from "next/image";
 
-const projects = (props) => {
+const Projects = (props) => {
 console.log(props.link2);
 
   return (
@@ -22,4 +22,4 @@ console.log(props.link2);
   )
 }
 
-export default projects
+export default Projects

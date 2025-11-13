@@ -4,7 +4,7 @@ import gsap from 'gsap';
 import { ScrollTrigger } from 'gsap/all';
 import React, { useEffect, useRef } from 'react'
 
-const skills = () => {
+const Skills = () => {
   gsap.registerPlugin(ScrollTrigger)
   const textRef = useRef(null);
 
@@ -118,4 +118,4 @@ const skills = () => {
   )
 }
 
-export default skills
+export default Skills

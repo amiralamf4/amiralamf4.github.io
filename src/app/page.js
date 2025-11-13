@@ -1,12 +1,12 @@
 "use client"
 import Navbaar from "@/components/navbar/Navbaar";
 import React from 'react'
-import Projectshow from '../components/home/projectshow';
-import Herosection from '../components/home/herosection'
-import Skills from '../components/home/skills'
-import Eyes from '../components/home/eyes'
-import Pictures from '../components/home/pictures'
-import Socialmedia from '../components/home/socialmedia'
+import Projectshow from '../components/home/Projectshow';
+import Herosection from '../components/home/Herosection'
+import Skills from '../components/home/Skills'
+import Eyes from '../components/home/Eyes'
+import Pictures from '../components/home/Pictures'
+import Socialmedia from '../components/home/Socialmedia'
 import { useGSAP } from '@gsap/react'
 import gsap from 'gsap'
 

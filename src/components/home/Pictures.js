@@ -6,7 +6,7 @@ import React, { useEffect, useRef } from 'react'
 import Image from "next/image";
 
 
-const pictures = () => {
+const Pictures = () => {
 
     gsap.registerPlugin(ScrollTrigger)
 
@@ -61,4 +61,4 @@ const pictures = () => {
     )
 }
 
-export default pictures
+export default Pictures

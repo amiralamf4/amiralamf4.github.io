@@ -6,7 +6,7 @@ import React, { useRef } from 'react'
 import dynamic from "next/dynamic";
 import Image from "next/image";
 
-const Clock = dynamic(() => import("../../components/clock/clock"), { ssr: false });
+const Clock = dynamic(() => import("../../components/clock/Clock"), { ssr: false });
 
 const page = () => {
 

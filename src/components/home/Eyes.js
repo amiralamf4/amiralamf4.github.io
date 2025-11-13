@@ -3,7 +3,7 @@ import React, { useEffect, useState, useRef } from 'react';
 import { motion } from "framer-motion";
 // import { div } from 'motion/react-client';
 
-const eyes = () => {
+const Eyes = () => {
     const eyeRef = useRef(null);
 
     const [leftPos, setLeftPos] = useState({ x: 0, y: 0 });
@@ -89,4 +89,4 @@ const eyes = () => {
     );
 };
 
-export default eyes;
+export default Eyes;

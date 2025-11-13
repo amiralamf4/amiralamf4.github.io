@@ -7,7 +7,7 @@ import React, { useRef } from 'react'
 import Image from "next/image";
 
 
-const herosection = () => {
+const Herosection = () => {
 
   const img=[
     "picture/pic13.jpg",
@@ -70,4 +70,4 @@ const herosection = () => {
   )
 }
 
-export default herosection
+export default Herosection
