@@ -5,7 +5,7 @@ import React, { useRef } from 'react'
 import { usePathname } from 'next/navigation'
 
 
-const loadAnimation = () => {
+const LoadAnimation = () => {
 
     const pathname = usePathname()
     console.log(pathname);
@@ -54,4 +54,4 @@ const loadAnimation = () => {
   )
 }
 
-export default loadAnimation
+export default LoadAnimation

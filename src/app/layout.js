@@ -1,5 +1,5 @@
 import "./globals.css";
-import LoadAnimation from "../components/loadingAnimation/loadAnimation"; 
+import LoadAnimation from "../components/loadingAnimation/LoadAnimation"; 
 // import Navbaar from "@/components/navbar/Navbaar";
 import SmoothScroll from "@/components/locomotive/SmoothScroll";
 export const metadata = {
