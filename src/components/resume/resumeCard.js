@@ -41,7 +41,7 @@ export default function ResumeCard() {
       </div>
 
       {/* Invisible clickable slices overlay on top of the canvas */}
-      <div className="absolute inset-0 z-40 pointer-events-auto">
+      <div className="absolute pointer-events-auto">
         {items.map((src, i) => (
           <button
             key={i}

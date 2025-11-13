@@ -4,7 +4,7 @@ import gsap from 'gsap'
 import Link from 'next/link'
 import React, { useRef } from 'react'
 import dynamic from "next/dynamic";
-const Clock = dynamic(() => import("@/components/clock/clock"), { ssr: false });
+const Clock = dynamic(() => import("@/components/clock/Clock"), { ssr: false });
 
 const page = () => {
 
