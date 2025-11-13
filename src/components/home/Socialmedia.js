@@ -30,7 +30,7 @@ const Socialmedia = () => {
         <div className='grid md:grid-cols-2 gap-x-20 w-[90vw] m-auto mt-20 text-[10vw] font-[ligema]'>
             <div className='border-gray-500 border-b-2'><a href="https://www.linkedin.com/in/amiralamf4/">LinkedIn</a></div>
             <div className='border-gray-500 border-b-2'><a href="github.com/amiralamf4">GitHub</a></div>
-            <div className='border-gray-500 border-b-2'><a  href="mailto:amiralam.72135@gmail.com?subject=Hello&body=Hi%20Amir!">Email</a></div>
+            <div className='border-gray-500 border-b-2'><a  href="mailto:sameer72135@gmail.com?subject=Hello&body=Hi%20Amir!">Email</a></div>
             <div className='border-gray-500 border-b-2'><a href="https://x.com/AmirAlam_18">x</a></div>
         </div>
     </div>
