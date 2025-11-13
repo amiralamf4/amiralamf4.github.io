@@ -8,7 +8,7 @@ import Image from "next/image";
 
 const Clock = dynamic(() => import("../../components/clock/Clock"), { ssr: false });
 
-const page = () => {
+const Page = () => {
 
   const homeDev = useRef()
   const homeRef = useRef()
@@ -94,4 +94,4 @@ const page = () => {
   )
 }
 
-export default page
+export default Page
