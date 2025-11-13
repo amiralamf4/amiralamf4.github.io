@@ -4,7 +4,7 @@ import gsap from 'gsap'
 import { ScrollTrigger } from 'gsap/all'
 import React, { useRef } from 'react'
 
-const socialmedia = () => {
+const Socialmedia = () => {
     gsap.registerPlugin(ScrollTrigger)
     const h1 = useRef()
     const body = useRef()
@@ -37,4 +37,4 @@ const socialmedia = () => {
   )
 }
 
-export default socialmedia
+export default Socialmedia

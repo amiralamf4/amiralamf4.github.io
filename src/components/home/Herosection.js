@@ -4,6 +4,8 @@ import { useGSAP } from '@gsap/react'
 import gsap from 'gsap'
 import { ScrollTrigger } from 'gsap/all'
 import React, { useRef } from 'react'
+import Image from "next/image";
+
 
 const herosection = () => {
 
@@ -53,7 +55,7 @@ const herosection = () => {
   return (
     <div className='pb-5'>
       <div ref={imgRef} className=" absolute w-[9rem] md:w-[13rem] overflow-hidden rounded-xl md:rounded-3xl left-[22%] top-[35%] md:left-[23%] md:top-[30%] lg:top-[35%] bg-red-300">
-        <img ref={imgsRef} className="w-full h-full object-cover" src={img[10]} alt="photo" />
+        <Image ref={imgsRef} className="w-full h-full object-cover" src={img[10]} alt="photo" />
       </div>
       <div className='relative mt-[55vh]'>
         <h1 className='text-[13vw] font-bold text-center font-[dt]'>AMIR ALAM</h1>
