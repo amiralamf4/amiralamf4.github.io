@@ -22,7 +22,7 @@ const Page = () => {
       display:'none',
       delay:.6,
     })
-  })
+  },[])
 
   return (
     <div className='w-full h-screen bg-black relative text-white'>
@@ -83,7 +83,7 @@ const Page = () => {
          
          <div className='w-full h-24 md:h-30 absolute bottom-10 left-0 flex items-center justify-start px-10'>
             <div className='w-[10vw] h-[10vw] md:w-[5vw] md:h-[5vw] rounded-3xl overflow-hidden border-2'>
-              <img src="./avtaar/avatar1.png" alt=""/>
+              <Image src="/avtaar/avatar1.png" alt=""/>
             </div>
             <Clock/>
          </div>
