@@ -38,10 +38,10 @@ const ProjectShow = () => {
 
         {/* Horizontal scroll area */}
         <div className="parent mt-5 w-full h-[50vh] sm:h-[70vh] md:h-[80vh] rounded-2xl flex gap-5 overflow-hidden">
-          <div className="box w-full h-full flex-shrink-0 rounded-3xl bg-amber-600 overflow-hidden">
+          <div className="box w-full h-full flex-shrink-0 rounded-3xl  overflow-hidden">
             <img className="w-full h-full object-cover" src="./project/03.png" alt="project"/>
           </div>
-          <div className="box w-full h-full flex-shrink-0 rounded-3xl bg-amber-600 overflow-hidden">
+          <div className="box w-full h-full flex-shrink-0 rounded-3xl overflow-hidden">
             <img className="w-full h-full object-cover" src="./project/02.png" alt="project"/>
           </div>
         </div>

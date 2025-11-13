@@ -6,7 +6,7 @@ import { useGSAP } from '@gsap/react';
 import gsap from 'gsap';
 import { ScrollTrigger } from 'gsap/all';
 
-const projects = () => {
+const Projects = () => {
 
   const projectList = [
     {
@@ -78,4 +78,4 @@ const projects = () => {
   )
 }
 
-export default projects
+export default Projects

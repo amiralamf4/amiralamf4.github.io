@@ -9,19 +9,19 @@ const Clock = dynamic(() => import("../../components/clock/Clock"), { ssr: false
 
 const Page = () => {
 
-  const homeDev = useRef(null)
-  const homeRef = useRef(null)
-  const aboutDev = useRef(null)
-  const aboutRef = useRef(null)
-  const projectDev = useRef(null)
-  const projectRef = useRef(null)
+  const homeDev = useRef()
+  const homeRef = useRef()
+  const aboutDev = useRef()
+  const aboutRef = useRef()
+  const projectDev = useRef()
+  const projectRef = useRef()
 
   useGSAP(()=>{
     gsap.to('.wall',{
       display:'none',
       delay:.6,
     })
-  }, []) // <- important
+  },[])
 
   return (
     <div className='w-full h-screen bg-black relative text-white'>
@@ -34,64 +34,59 @@ const Page = () => {
             {/* Home Link */}
             <div 
             onMouseEnter={()=>{
-              if (homeDev.current) homeDev.current.style.height = '100%';
-              if (homeRef.current) { homeRef.current.style.display= 'block'; homeRef.current.style.color= 'black'; }
+              homeDev.current.style.height = '100%',
+              homeRef.current.style.display= 'block',
+              homeRef.current.style.color= 'black'
             }}
             onMouseLeave={()=>{
-              if (homeDev.current) homeDev.current.style.height = '0';
-              if (homeRef.current) homeRef.current.style.display = 'none';
+              homeDev.current.style.height = '0',
+              homeRef.current.style.display = 'none'
+
             }}
-            className='w-full h-24 md:h-40 border-white border-y-2 flex justify-center items-center cursor-pointer relative text-[6vw] font-[hermione]'>
-              <Link href='/'><h2>Home</h2>
-                <div ref={homeDev} className=' absolute top-0 left-0 transition-all w-full h-0 bg-[color:var(--elemColor)] flex justify-center items-center'>
-                  <h2 ref={homeRef} className='hidden text-black transition-all'>Home</h2>
-                </div>
-              </Link>
+            className='w-full h-24 md:h-40 border-white border-y-2 flex justify-center items-center cursor-pointer relative text-[6vw] font-[hermione]'><Link href='/'><h2 >Home</h2>
+            <div ref={homeDev} className=' absolute top-0 left-0 transition-all w-full h-0 bg-[color:var(--elemColor)] flex justify-center items-center'><h2 ref={homeRef} className='hidden text-black transition-all'>Home</h2></div></Link>
             </div>
 
             {/* Resume Link */}
             <div 
             onMouseEnter={()=>{
-              if (aboutDev.current) aboutDev.current.style.height = '100%';
-              if (aboutRef.current) { aboutRef.current.style.display= 'block'; aboutRef.current.style.color= 'black'; }
+              aboutDev.current.style.height = '100%',
+              aboutRef.current.style.display= 'block',
+              aboutRef.current.style.color= 'black'
             }}
             onMouseLeave={()=>{
-              if (aboutDev.current) aboutDev.current.style.height = '0';
-              if (aboutRef.current) aboutRef.current.style.display = 'none';
+              aboutDev.current.style.height = '0',
+              aboutRef.current.style.display = 'none'
+
             }}
-            className='w-full h-24 md:h-40 border-white border-y-2 flex justify-center items-center cursor-pointer relative text-[6vw] font-[hermione]'>
-              <Link href='/resume'><h2>Resume</h2>
-                <div ref={aboutDev} className=' absolute top-0 left-0 transition-all w-full h-0 bg-[color:var(--elemColor)] flex justify-center items-center'>
-                  <h2 ref={aboutRef} className='hidden text-black transition-all'>Resume</h2>
-                </div>
-              </Link>
+            className='w-full h-24 md:h-40 border-white border-y-2 flex justify-center items-center cursor-pointer relative text-[6vw] font-[hermione]'><Link href='/resume'><h2>Resume</h2>
+            <div ref={aboutDev} className=' absolute top-0 left-0 transition-all w-full h-0 bg-[color:var(--elemColor)] flex justify-center items-center'><h2 ref={aboutRef} className='hidden text-black transition-all'>Resume</h2></div></Link>
             </div>
          
          {/* Project Link */}
          <div 
             onMouseEnter={()=>{
-              if (projectDev.current) projectDev.current.style.height = '100%';
-              if (projectRef.current) { projectRef.current.style.display= 'block'; projectRef.current.style.color= 'black'; }
+              projectDev.current.style.height = '100%',
+              projectRef.current.style.display= 'block',
+              projectRef.current.style.color= 'black'
             }}
             onMouseLeave={()=>{
-              if (projectDev.current) projectDev.current.style.height = '0';
-              if (projectRef.current) projectRef.current.style.display = 'none';
+              projectDev.current.style.height = '0',
+              projectRef.current.style.display = 'none'
+
             }}
-            className='w-full h-24 md:h-40 border-white border-y-2 flex justify-center items-center cursor-pointer relative text-[6vw] font-[hermione]'>
-              <Link href='/projects'><h2>Projects</h2>
-                <div ref={projectDev} className=' absolute top-0 left-0 transition-all w-full h-0 bg-[color:var(--elemColor)] flex justify-center items-center'>
-                  <h2 ref={projectRef} className='hidden text-black transition-all'>Projects</h2>
-                </div>
-              </Link>
-         </div>
+            className='w-full h-24 md:h-40 border-white border-y-2 flex justify-center items-center cursor-pointer relative text-[6vw] font-[hermione]'><Link href='/projects'><h2 >Projects</h2>
+            <div ref={projectDev} className=' absolute top-0 left-0 transition-all w-full h-0 bg-[color:var(--elemColor)] flex justify-center items-center'><h2 ref={projectRef} className='hidden text-black transition-all'>Projects</h2></div></Link>
+            </div>
          </div>
          
          <div className='w-full h-24 md:h-30 absolute bottom-10 left-0 flex items-center justify-start px-10'>
             <div className='w-[10vw] h-[10vw] md:w-[5vw] md:h-[5vw] rounded-3xl overflow-hidden border-2'>
-              <img src="/avtaar/avatar1.png" alt="avatar"/>
+              <img src="/avtaar/avatar1.png" alt=""/>
             </div>
             <Clock/>
          </div>
+
 
          <div className='wall w-full h-full bg-amber-50 absolute top-0 left-0'></div>
     </div>

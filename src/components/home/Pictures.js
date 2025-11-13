@@ -3,7 +3,6 @@ import { useGSAP } from '@gsap/react'
 import gsap from 'gsap'
 import { ScrollTrigger } from 'gsap/all'
 import React, { useEffect, useRef } from 'react'
-import Image from "next/image";
 
 
 const Pictures = () => {
@@ -56,7 +55,6 @@ const Pictures = () => {
                 <img src="../picture/pic15.jpg" alt="pic" /></div>
             <div className='w-[7rem] md:w-[13rem] h-[18rem] absolute hidden md:block md:top-28 md:left-1/3'>
                 <img src="../picture/pic3.png" alt="pic" /></div>
-           
         </div>
     )
 }

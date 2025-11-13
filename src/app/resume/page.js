@@ -4,7 +4,7 @@ import Resume from '../../components/resume/ScrollVelocity'
 import Navbaar from '../../components/navbar/Navbaar'
 import ResumeCard from "../../components/resume/ResumeCard"
 
-const page = () => {
+const Page = () => {
   return (
     <div className='w-full h-screen relative bg-[color:var(--bg)]'>
       <Navbaar/>
@@ -17,4 +17,4 @@ const page = () => {
   )
 }
 
-export default page
+export default Page
